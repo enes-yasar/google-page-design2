@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #f2f2f2;
+}
+
+.container {
+    background-color: #1f1f1f;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative; /* To position the links div correctly */
+}
+
+.links {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.links a {
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+}
+
+.links a:hover {
+    color: #f1f1f1;
+    text-decoration: underline;
+}
+
+.google {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 800px;
+    margin-top: 20px;
+}
+
+.logo {
+    margin-bottom: 20px;
+}
+
+.input-wrapper {
+    position: relative;
+    width: 70%;
+    max-width: 700px;
+    margin-bottom: 20px;
+}
+
+.input-wrapper input {
+    width: 100%;
+    height: 50px;
+    padding: 10px 60px;
+    border-radius: 24px;
+    border: 1px solid #333;
+    background-color: #313335;
+    color: white;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.input-wrapper input::placeholder {
+    color: #888;
+}
+
+.input-wrapper input:hover {
+    border-color: #666;
+}
+
+.icon-left {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #888;
+}
+
+.icons-right {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.icons-right i {
+    width: 24px;
+    height: 24px;
+    color: #888;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row; /* Buttons are aligned horizontally */
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 700px;
+    margin-top: 20px;
+}
+
+.buttons a {
+    margin: 5px;
+}
+
+.buttons button {
+    text-align: center;
+    border-radius: 5px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #28292a;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s, border 0.3s; /* Add transition for smooth effect */
+}
+
+.buttons button:hover {
+    background-color: #333;
+    border: solid 1px white;
+}
+
+.last {
+    background-color: #0e0e10;
+    color: white;
+    padding: 10px;
+}
+
+.location {
+    background-color: #0e0e10;
+    color: white;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 10px;
+}
+
+.info {
+    background-color: #0e0e10;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    color: white;
+}
+
+.left-links, .right-links {
+    display: flex;
+}
+
+.info a {
+    color: white;
+    padding: 5px;
+    text-decoration: none;
+}
+
+.info .iklim {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 5px;
+}
+
+.info a:hover {
+    color: #f1f1f1;
+    text-decoration: underline;
+}
